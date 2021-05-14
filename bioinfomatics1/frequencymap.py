@@ -16,10 +16,17 @@ def create_frequency_map(text, k):
 
     return freqmap, maximum_value
 
+def find_max_freq_word(freqmap, maximum_value):
+    result = []
+    for key, value in freqmap.items():
+        if value == maximum_value:
+            result.append(key)
+    return result
+
 def main():
     freqmap, maximum_value = create_frequency_map(TEXT, K)
     print(freqmap)
-    print(maximum_value)
+    print(find_max_freq_word(freqmap, maximum_value))
 
 if __name__ == "__main__":
     main()
