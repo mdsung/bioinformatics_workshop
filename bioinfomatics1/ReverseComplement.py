@@ -1,4 +1,4 @@
-INPUT="TCTTGATCA"
+INPUT="TTGTGTC"
 
 ATGC_MAP = {
     "A":"T",
